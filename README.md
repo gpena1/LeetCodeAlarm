@@ -1,0 +1,5 @@
+# Hello there!
+The intention behind this simple alarm is as suggested by the repository name: to alert you that the LeetCode daily problem has dropped! Here are some instructions for use:
+1. Clone the repository. Take note of where you clone it, as this will be needed in the shell scripts' and alarm program's `PATH_TO_REPO` variables. I have found that using the absolute path is best to avoid any issues.
+2. Add `0 20 * * * PATH_TO_REPO/runproject.sh` to your crontab, where `PATH_TO_REPO` is as it is defined in step 1. This schedules the script to run at 8 PM on your time, which is when the daily problem drops in UTC-4, so be sure to adjust the second number (the hour) as is necessary for this to be accurate for you.
+3. Wait for the problem to drop! Any issues the project has running should be logged in your directory's `cron.log` file, so be sure to check there if you encounter any issues.
